@@ -1,0 +1,24 @@
+,name,image,number,work,url,cat
+0,우리은행,/static/fss/img/sub/img_bank1_PO-200183.png,"1588-5000, 1599-5000",,http://www.wooribank.com/,금융기관
+1,제주은행,/static/fss/img/sub/img_bank2_PO-200183.png,1588-0079,,http://www.e-jejubank.com/,금융기관
+2,한국스탠다드차트제일은행,/static/fss/img/sub/img_bank3_PO-200183.png,1588-1599,,http://www.standardchartered.co.kr/gw/index.html,금융기관
+3,전북은행,/static/fss/img/sub/img_bank4_PO-200183.png,1588-4477,,http://www.jbbank.co.kr,금융기관
+4,KEB하나은행,/static/fss/img/sub/img_bank5_PO-200183.png,1599-1111,,http://www.kebhana.com/,금융기관
+5,경남은행,/static/fss/img/sub/img_bank6_PO-200183.png,1588-8585,,http://www.knbank.co.kr/,금융기관
+6,산업은행,/static/fss/img/sub/img_bank7_PO-200183.png,1588-1500,,http://www.kdb.co.kr,금융기관
+7,신한은행,/static/fss/img/sub/img_bank8_PO-200183.png,1544-8000,,http://www.shinhan.com/index.jsp,금융기관
+8,기업은행,/static/fss/img/sub/img_bank9_PO-200183.png,1588-2588,,http://www.ibk.co.kr/,금융기관
+9,한국씨티은행,/static/fss/img/sub/img_bank10_PO-200183.png,1588-7000,,http://www.citibank.co.kr/,금융기관
+10,NH농협,/static/fss/img/sub/img_bank11_PO-200183.png,"1588-2100, 1544-2100",,https://banking.nonghyup.com/nhbank.html,금융기관
+11,국민은행,/static/fss/img/sub/img_bank12_PO-200183.png,"1588-9999, 1599-9999",,https://www.kbstar.com/,금융기관
+12,수협중앙,/static/fss/img/sub/img_bank13_PO-200183.png,1588-1515,,http://www.suhyup.co.kr/,금융기관
+13,대구은행,/static/fss/img/sub/img_bank14_PO-200183.png,1588-5050,,http://www.dgb.co.kr/index.jsp,금융기관
+14,신협,/static/fss/img/sub/img_bank15_PO-200183.png,1566-6000,,http://www.cu.co.kr/CPSI020000.do,금융기관
+15,부산은행,/static/fss/img/sub/img_bank16_PO-200183.png,1588-6200,,http://www.busanbank.co.kr,금융기관
+16,우정사업,/static/fss/img/sub/img_bank17_PO-200183.png,1588-1900,,http://www.koreapost.go.kr/,금융기관
+17,광주은행,/static/fss/img/sub/img_bank18_PO-200183.png,"1588-3388, 1600-4000",,http://www.kjbank.com/banking/index.jsp,금융기관
+18,새마을금고,/static/fss/img/sub/img_bank19_PO-200183.png,1599-9000,,http://www.kfcc.co.kr/,금융기관
+19,산림조합중앙회,/static/fss/img/sub/img_bank20_PO-200183.png,1544-4200,,http://www.nfcf.or.kr/,금융기관
+20,경찰서,/static/fss/img/sub/img_state1_PO-200183.png,국번없이 112,피싱사기 피해신고,http://www.police.go.kr,신고기관
+21,금융감독원,/static/fss/img/sub/img_state2_PO-200183.png,국번없이 1332,피싱사기 관련 문의·상담,https://www.fss.or.kr,신고기관
+22,한국인터넷진흥원,/static/fss/img/sub/img_state3_PO-200183.png,국번없이 118,금융기관 등 사칭한 스팸메시지 신고,http://www.kisa.or.kr/main.jsp,신고기관
