@@ -1,0 +1,24 @@
+{% extends "./base.html" %}
+{% block main %}
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">개인 정보 제공 동의</h1>
+                <div class="separator separator-info">✻</div>
+                <h3 id="NSK" class="text-gray">실시간 탐지 사용 시 통화 및 문자 내역이 수집됩니다.<br>
+                    <br>
+                    정보 수집 거부 시 실시간 탐지 사용이 불가하며,<br>
+                    의심 번호 조회 서비스 이용을 부탁드립니다.
+                </h3>
+                <br>
+                <br>
+                <!-- 정보제공 동의 여부 선택 -->
+                <button href="/real_time_detection/" class="btn btn-fill btn-lg btn-info" onclick="location.href='/real_time_detection/'" ><h3 id="NSK" class="text-white">정보제공 동의</h3></button>
+                <button href="/" class="btn btn-fill btn-lg" onclick="location.href='/'" ><h3 id="NSK">정보제공 거부</h3></button>      
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "./base.html" %}
+{% block main %}
+{% load static %}
+
+<div class="section section-presentation-page">
+    {% comment %} <div style="width: 150px; height: 150px;"></div> {% endcomment %}
+    <div class="parallax filter filter-color-gray">
+        <div class="empty-space"></div>
+        <div class="image" style="background-image:url('assets/img/header-4.jpeg')">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="audio-container">
+                    <audio controls style="position: relative; top: 1em; left: 0;">
+                        <source src="{% static 'audios\home_html.mp3' %}" type="audio/mpeg">
+                        home_html.mp3   
+                    </audio>
+                </div>
+                {% comment %} <p><span id="NSK">BopiBopi</span></p> {% endcomment %}
+                <h1 id="NSK" class="title-modern">딥보이스<br>탐지 시스템</h1>
+                <div class="separator">♦</div>
+                <h3 id="NSK">보이스피싱이 의심된다면?</h3>
+                <br>
+                {% comment %} 실시간 탐지 시 통화 정보 수집됨을 알리고 그래도 진행할건지 묻기 {% endcomment %}
+                <button href="/deepvoice_detection/" class="btn btn-fill btn-lg btn-info" onclick="location.href='/deepvoice_detection/'" ><h3 id="NSK" class="text-white">복제 음성 탐지하기</h3></button>
+                <button href="/detection_history/" class="btn btn-fill btn-lg btn-white" onclick="location.href='/detection_history/'" ><h3 id="NSK" class="text-info">탐지 내역 조회하기</h3></button>
+                {% comment %} <button href="/real_time_detection/" class="btn btn-fill btn-lg btn-white" onclick="location.href='/real_time_detection/'" ><h3 id="NSK" class="text-info">피싱 실시간 탐지하기</h3></button> {% endcomment %}
+                {% comment %} <button href="/number_search/" class="btn btn-fill btn-lg" onclick="location.href='/number_search/'" ><h3 id="NSK">의심번호 조회하기</h3></button>       {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container-fluid">        
+            <div class="col">
+                <div class="col-md-6">
+                        <div class="card card-blog">
+                            <a href='/victim_guide/'>
+                                <div class="content">
+                                    <div class="icon text-info">
+                                        <i class="pe-7s-info"></i>
+                                    </div>
+                                    <a href="/victim_guide/" class="card-title">
+                                        <h3 id="NSK">보이스피싱 대응방안 안내</h3>
+                                        {% comment %} <hr> {% endcomment %}
+                                        {% comment %} <p id="NSK" class="text-description text-gray">피싱 피해 시 대응방법 안내</p> {% endcomment %}
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                    
+
+                    <div class="col-md-6">
+                        <div class="card card-blog">
+                            <a href="/rel_org/">
+                                <div class="content">
+                                    <div class="icon text-info">
+                                        <i class="pe-7s-user"></i>
+                                    </div>
+                                    <a href="/rel_org/" class="card-title"><h3 id="NSK">금융기관, 수사 및 신고기관</h3>
+                                    {% comment %} <hr> {% endcomment %}
+                                    {% comment %} <p id="NSK" class="text-description text-gray">금융기관, 수사 및 신고기관 정보 보기</p> {% endcomment %}
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

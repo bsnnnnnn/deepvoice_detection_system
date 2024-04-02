@@ -1,0 +1,242 @@
+{% extends "./base.html" %}
+{% block main %}
+{% load static %}
+
+<div class="section section-contact">
+    <div class="filter filter-color-gray">
+      <div class="container">
+        
+        <div class="text-area">
+            <div class="title">
+                <h1 id='NSK'>보이스피싱 피해 시<br>대응방법 안내</h1>
+                <div class="separator separator-info">✻</div>
+                <audio controls>
+                  <source src="{% static 'audios/victim_guide_html.mp3' %}" type="audio/mpeg">
+                  victim_guide_html.mp3
+                </audio>
+                <br>
+                <br>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                              <a id="NSK" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h4 id="NSK" class="text-left">1. 휴대폰 악성 앱 및 코드 감염 여부 점검
+                                  {% comment %} <audio controls style="float: right;">
+                                    <source src="{% static 'audios/victim_guide_1.mp3' %}" type="audio/mpeg">
+                                    victim_guide_1.mp3
+                                  </audio> {% endcomment %}
+                                </h4>  
+                                <span> </span>
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                              <p id="NSK" class="text-left">제조사 AS 센터 문의<br>초기화 전까지 휴대폰 전원을 끄거나 비행기 모드 전환</p>
+                          </div>
+                      </div>
+                  </div>
+    
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4 id="NSK" class="text-left">2. 개인정보 노출 사실 등록
+                                  {% comment %} <audio controls style="float: right;">
+                                    <source src="{% static 'audios/victim_guide_2.mp3' %}" type="audio/mpeg">
+                                    victim_guide_2.mp3
+                                  </audio> {% endcomment %}
+                                </h4> 
+                                  <span> </span>
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                              <p id="NSK" class="text-left">은행 방문 혹은 금융감독원 사이트(<a href="http://pd.fss.or.kr" target="_blank">pd.fss.or.kr</a>) 이용
+                                     </p>
+                          </div>
+                      </div>
+                  </div>
+    
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                              <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4 id="NSK" class="text-left">3. 본인 계좌 거래 정지
+                                  {% comment %} <audio controls style="float: right;">
+                                    <source src="{% static 'audios/victim_guide_3.mp3' %}" type="audio/mpeg">
+                                    victim_guide_3.mp3
+                                  </audio> {% endcomment %}
+                                </h4>
+                                  <span> </span>
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                              <p id="NSK" class="text-left">계좌정보통합관리서비스 [어카운트인포<a href="http://payinfo.or.kr" target="_blank">(http://payinfo.or.kr)</a>] 통해 전 금융기관 계좌개설 및 대출 확인</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                              <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h4 id="NSK" class="text-left">4. 휴대폰 명의 도용 여부 확인
+                                  {% comment %} <audio controls style="float: right;">
+                                    <source src="{% static 'audios/victim_guide_4.mp3' %}" type="audio/mpeg">
+                                    victim_guide_4.mp3
+                                  </audio> {% endcomment %}
+                                </h4>
+                                  <span> </span>
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                              <p id="NSK" class="text-left">명의도용방지서비스 [엠세이퍼<a href="http://msafer.or.kr" target="_blank">(http://msafer.or.kr)</a>] 통해 본인 명의 핸드폰번호 확인<br>
+                                (본인이 모르는 핸드폰 개통내역 확인 시, 해당 통신사 고객센터로 문의)</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <h4 id="NSK" class="text-left">5. 신분증 분실신고 및 재발급
+                                {% comment %} <audio controls style="float: right;">
+                                  <source src="{% static 'audios/victim_guide_5.mp3' %}" type="audio/mpeg">
+                                  victim_guide_5.mp3
+                                </audio> {% endcomment %}
+                              </h4>
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <p id="NSK" class="text-left">주민등록증(주민센터 방문 또는 정부24포털(<a href="https://gov.kr" target="_blank">https://gov.kr</a>)접속)<br>
+                              운전면허증(경찰서 방문 또는 도로교통공단 안전운전통합민원(<a href="http://safedriving.or.kr" target="_blank">http://safedriving.or.kr</a>)접속)<br>
+                              모바일신분증(모바일신분증(<a href="http://mobileid.go.kr" target="_blank">mobileid.go.kr</a>) > 문의하기 > 도난,분실신고하기)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <h4 id="NSK" class="text-left">6. 공동인증서 폐기
+                                {% comment %} <audio controls style="float: right;">
+                                  <source src="{% static 'audios/victim_guide_6.mp3' %}" type="audio/mpeg">
+                                  victim_guide_6.mp3
+                                </audio> {% endcomment %}
+                              </h4>
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <p id="NSK" class="text-left">공동인증서를 발급한 금융기관을 통해 공동인증서 폐기</p>
+                        </div>
+                    </div>
+                </div>
+
+                {% comment %} <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <h3 id="NSK" class="text-left">1. 휴대폰 악성 앱 및 코드 감염 여부 점검</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">제조사 AS 센터 문의<br>초기화 전까지 휴대폰 전원을 끄거나 비행기 모드 전환</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <h3 id="NSK" class="text-left">2. 개인정보 노출 사실 등록</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">은행 방문 혹은 금융감독원 사이트(<a class="guide_link" href="http://pd.fss.or.kr" target="_blank">pd.fss.or.kr</a>) 이용</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <h3 id="NSK" class="text-left">3. 본인 계좌 거래 정지</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">계좌정보통합관리서비스 [어카운트인포<a class="guide_link" href="http://payinfo.or.kr" target="_blank">(http://payinfo.or.kr)</a>] 통해 전 금융기관 계좌개설 및 대출 확인</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <h3 id="NSK" class="text-left">4. 휴대폰 명의 도용 여부 확인</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">명의도용방지서비스 [엠세이퍼<a class="guide_link" href="http://msafer.or.kr" target="_blank">(http://msafer.or.kr)</a>] 통해 본인 명의 핸드폰번호 확인<br>
+                              (본인이 모르는 핸드폰 개통내역 확인 시, 해당 통신사 고객센터로 문의)</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <h3 id="NSK" class="text-left">5. 신분증 분실신고 및 재발급</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">주민등록증(주민센터 방문 또는 정부24포털(<a class="guide_link" href="https://gov.kr" target="_blank">https://gov.kr</a>)접속)<br>
+                              운전면허증(경찰서 방문 또는 도로교통공단 안전운전통합민원(<a class="guide_link" href="http://safedriving.or.kr" target="_blank">http://safedriving.or.kr</a>)접속)<br>
+                              모바일신분증(모바일신분증(<a class="guide_link" href="http://mobileid.go.kr" target="_blank">mobileid.go.kr</a>) > 문의하기 > 도난,분실신고하기)</h4>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button id="accordion-btn" class="btn btn-simple btn-fill btn-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <h3 id="NSK" class="text-left">6. 공동인증서 폐기</h3>
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="text3">
+                            <h4 id="NSK" class="text-mid">공동인증서를 발급한 금융기관을 통해 공동인증서 폐기</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> {% endcomment %}
+        </div>
+      </div>
+    </div>  
+  </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "./base.html" %}
+{% block main %}
+{% load static %}
+
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">탐지 내역 조회</h1>
+                <div class="separator separator-info">✻</div>
+            </div>
+
+            <div class="section section-cards">
+                <div class="container-fluid">
+                    <!-- 통화내역 목록 -->
+                    <div class="row">
+                        {% comment %} db 연결해서 리스트로 반환하기 {% endcomment %}
+                        {% comment %} 페이징? {% endcomment %}
+                        {% for list in detection_list %}
+                            <div class="media">
+                                <div class="media-body">
+                                    {% if list.results == 1 %}
+                                        <h3 id="NSK" class="text-info media-heading">{{ list.numbers }}</h3>
+                                        <h5 id="NSK" class="text-muted pull-right">의심 통화<br><br>{{ list.called_at }}</h5>
+                                    {% else %}
+                                        <h3 id="NSK" class="media-heading">{{ list.numbers }}</h3>
+                                        <h5 id="NSK" class="text-muted pull-right">{{ list.called_at }}</h5>
+                                    {% endif %}
+                                </div>
+                                {% comment %} <hr class="hr_hist"> {% endcomment %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

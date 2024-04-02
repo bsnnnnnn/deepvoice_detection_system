@@ -1,0 +1,63 @@
+{% extends "./base.html" %}
+{% block main %}
+{% comment %} 위험도 낮음 {% endcomment %}
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">복제 음성 탐지 결과</h1>
+            <div class="separator separator-info">✻</div>
+            <!-- <h4 id="NSK" class="text-gray">{{ cat }} 탐지 결과입니다.</h4> -->
+
+            <div class="section section-cards">
+                <div class="separator-container">        
+                    <div class="row justify-content-center">
+                        {% comment %} <div class="col-md-6"> {% endcomment %}
+                            <div class="card card-plain">
+                                <div class="content">
+                                    <div class="icon text-gray">
+                                        <i class="pe-7s-check"></i>
+                                    </div>
+                                    <p id="NSK">탐지 결과</p>
+                                    {% comment %} <h3 id="NSK" class="text-gray">{{ result }}</h3>
+                                    <h3 id="NSK" class="text-gray">resnet : {{ resnet_result }}</h3>
+                                    <h3 id="NSK" class="text-gray">gru : {{ gru_result }}</h3> {% endcomment %}
+                                    <h3 id="NSK" class="text-gray">{{ call_number }}</h3>
+                                    <div class="card-title text-info"><h3 id="NSK">복제 음성일 가능성이 낮습니다.</h3></div>
+                                    {% comment %} <span id="NSK">입니다.</span> {% endcomment %}
+                                </div>
+                            </div>
+                        {% comment %} </div> {% endcomment %}
+                            
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="justify-content-center"> -->
+            <div class="button-container justify-content-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="/rel_org/">
+                            <button id="NSK" class="btn btn-info btn-lg" type="button">관련 기관 정보 보기</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/notify/">
+                            <button id="NSK" class="btn btn-fill btn-info btn-lg" type="button">의심번호 신고하기</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/victim_guide/">
+                            <button id="NSK" class="btn btn-info btn-lg" type="button">피해 시 대응방법 보기</button>   
+                        </a>
+                    </div>
+                    {% comment %} <div class="col-md-3">
+                        <a href="">
+                            <button id="NSK" class="btn btn-fill btn-default btn-lg" type="button">대응 안내 챗봇 상담하기</button>   
+                        </a>
+                    </div> {% endcomment %}
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "./base.html" %}
+{% block main %}
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">복제 음성 탐지하기</h1>
+                <div class="separator separator-info">✻</div>
+                <!-- <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div> -->
+                <br>
+                <br>
+
+                <div class="button-container justify-content-center">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% comment %} 각 필드가 <p> 태그로 감싸져서 표현됨 {% endcomment %}
+                        {{ form.as_p }}
+                        <!-- {{ form.as_div }} -->
+                        <br>
+                        <button class="btn btn-info btn-fill btn-lg" type="submit">탐지 시작하기</button>
+                        <button href="/" class="btn btn-fill btn-lg" onclick="location.href='/'">중지하기</button>
+                    </form>
+                </div>
+
+                <!-- <div class="button-container justify-content-center">
+                    {% comment %} <form id="startDetectionForm" method="post" action="{% url 'phishing:real_time_detection' %}"> {% endcomment %}
+                        {% comment %} {% csrf_token %} {% endcomment %}
+                        <a href="/test_result/">
+                            <button class="btn btn-info btn-fill btn-lg" type="submit"><h3 id="NSK">탐지 시작하기</h3></button>
+                        </a>
+                        {% comment %} 중지해서 홈으로 이동 {% endcomment %}
+                    {% comment %} </form> {% endcomment %}
+                    <button href="/" class="btn btn-fill btn-lg" onclick="location.href='/'"><h3 id="NSK">중지하기</h3></button>
+                </div> -->
+                {% comment %} 중지해서 홈으로 이동 {% endcomment %}
+                {% comment %} <button href="/" class="btn btn-fill btn-lg" onclick="location.href='/'" ><h3 id="NSK">중지하기</h3></button> {% endcomment %}
+            </div>
+                
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

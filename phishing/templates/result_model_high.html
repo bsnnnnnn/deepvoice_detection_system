@@ -1,0 +1,95 @@
+{% extends "./base.html" %}
+{% block main %}
+{% comment %} 위험도 높음 {% endcomment %}
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">복제 음성 탐지 결과</h1>
+            <div class="separator separator-info">✻</div>
+            <h3 id="NSK" class="text-gray">복제 음성이 의심되는 통화입니다.</h3>
+
+            <div class="section section-cards">
+                <div class="separator-container">        
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6">
+                            <div class="card card-plain">
+                                <div class="content">
+                                    <a href="">
+                                        <div class="icon text-info">
+                                            <i class="pe-7s-attention"></i>
+                                        </div>
+                                        {% comment %} <h3 id="NSK" class="text-gray">{{ result }}</h3>
+                                        <h3 id="NSK" class="text-gray"> resnet :{{ resnet_result }}</h3>
+                                        <h3 id="NSK" class="text-gray">gru : {{ gru_result }}</h3> {% endcomment %}
+                                        <h3 id="NSK" class="text-gray">의심번호</h3>
+                                        <br>
+                                        <div style="display: inline-block;">
+                                            <h2 id="NSK" class="number text-info" style="display: inline; color: your_color;">{{ call_number }}</h2>
+                                        </div>
+                                        <br>
+                                        <!-- <h4 id="NSK">세부내용 확인하기</h4> -->
+                                        <br>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="number_block" class="card card-plain">
+                                {% comment %} 의심번호 차단하기 {% endcomment %}
+                                <a href="">
+                                    <div class="content">
+                                        <br>
+                                        {% comment %} 의심번호 차단하면 차단한 번호 목록 볼 수 있게 {% endcomment %}
+                                        {% comment %} 의심번호 차단 중일 때 {% endcomment %}
+                                        {% if is_blocking_active %}
+                                            <div class="icon text-info">
+                                                <i class="pe-7s-switch"></i>
+                                            </div>
+                                            <h3 id="NSK">의심번호 차단 중</h3>
+                                        {% else %}
+                                            <div class="icon text-gray">
+                                                <i class="pe-7s-switch"></i>
+                                            </div>
+                                            <h3 id="NSK">의심번호 차단하기</h3>
+                                        {% endif %}
+                                        <br>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="justify-content-center"> -->
+            <div class="button-container justify-content-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="/rel_org/">
+                            <button id="NSK" class="btn btn-info btn-lg" type="button">관련 기관 정보 보기</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/notify/">
+                            <button id="NSK" class="btn btn-fill btn-info btn-lg" type="button">의심번호 신고하기</button>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/victim_guide/">
+                            <button id="NSK" class="btn btn-info btn-lg" type="button">피해 시 대응방법 보기</button>   
+                        </a>
+                    </div>
+                    {% comment %} <div class="col-md-3">
+                        <a href="">
+                            <button id="NSK" class="btn btn-fill btn-default btn-lg" type="button">대응 안내 챗봇 상담하기</button>   
+                        </a>
+                    </div> {% endcomment %}
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

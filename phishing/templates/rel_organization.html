@@ -1,0 +1,73 @@
+{% extends "./base.html" %}
+{% block main %}
+{% load static %}
+
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">피싱 피해 신고처</h1>
+                <div class="separator separator-info">✻</div>
+                <audio controls="controls">
+                    <source src="{% static 'audios/rel_org_html.mp3' %}" type="audio/mpeg">
+                    rel_org_html.mp3
+                </audio>
+            </div>
+
+            <div class="section section-cards">
+                <div class="container-fluid">
+                        <!-- 금융기관 리스트 -->
+                        <h2 id="NSK">금융기관</h2>
+                        <div class="line-divider line-info"></div>
+                            <!-- <div class="separator separator-info">✻</div> -->
+                        <!-- </div> -->
+                        <br>
+                        <div class="row">
+                            <div>
+                                {% for org in orgs_list %}
+                                    {% if "국번" not in org.call %}
+                                        <div class="col-sm-6">
+                                            <a href="{{ org.url }}" target="_blank">
+                                                <div class="card card-price">
+                                                    <br>
+                                                    <h3 id="NSK" class="title-header text-info">{{ org.name }}</h3>
+                                                    <p id="NSK" class="text-description text-gray">{{ org.call }}</p>
+                                                    <br>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <!-- 수사기관 리스트 -->
+                        <h2 id="NSK">수사 및 신고 기관</h2>
+                        <div class="line-divider line-info"></div>
+                        <br>
+                        <div class="row">
+                            <div>
+                                {% for org in orgs_list %}
+                                    {% if "국번" in org.call %}
+                                        <div class="col-sm-6">
+                                            <a href="{{ org.url }}">
+                                                <div class="card card-price">
+                                                    <br>
+                                                    <h3 id="NSK" class="title-header text-info">{{ org.name }}</h3>
+                                                    <p id="NSK" class="text-description text-gray">{{ org.call }}</p>
+                                                    <br>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "./base.html" %}
+{% block main %}
+<div class="section section-contact">
+    <div class="container">
+        <div class="text-area">
+            <div class="title">
+                <h1 id="NSK">복제 음성 탐지하기</h1>
+                <div class="separator separator-info">✻</div>
+                {% comment %} <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div> {% endcomment %}
+                <br>
+                <br>
+
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% comment %} 각 필드가 <p> 태그로 감싸져서 표현됨 {% endcomment %}
+                    {{ form.as_p }}
+                    <button class="btn btn-fill btn-lg" type="submit">Convert</button>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
